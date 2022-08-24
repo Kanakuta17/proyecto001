@@ -17,6 +17,11 @@
     align-content: flex-start;
 }
 
+.navbar1 {
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
 .encabezado {
     background-color: rgb(95, 214, 214);
     align-items: center;
