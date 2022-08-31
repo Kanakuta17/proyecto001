@@ -1,0 +1,29 @@
+{
+  "name": "brian",
+  "version": "1.0.0",
+  "description": "sass",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "node-sass --include-path scss style/prueba.scss style/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kanakuta17/proyecto001.git"
+  },
+  "keywords": [
+    "npm",
+    "init",
+    "sass"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kanakuta17/proyecto001/issues"
+  },
+  "homepage": "https://github.com/Kanakuta17/proyecto001#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
