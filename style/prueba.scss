@@ -1,3 +1,5 @@
+@import "./variables";
+
 * {
     margin: 0%;
     padding: 0%;
@@ -8,6 +10,7 @@
 .logo {
     margin-left: 40%;
 }
+
 
 header {
     background-color: rgb(95, 214, 214);
@@ -54,12 +57,7 @@ header {
             
         }
         
-        .descripcion {
-            background-color: rgb(187, 231, 140);
-            height: 90px;
-            display: flex;
-            transition: all 2s,
-        }
+        
         
 
 }
@@ -94,10 +92,38 @@ header {
         margin-block: 30px;
         margin-left: 10px;
         float: left;
-        height: 300px;
-        
+        @include sizes(300px,300px)
     }
 }
+
+.redes {
+    display: flex;
+    justify-content: center;
+    
+    color: white;
+    padding-block: 20px;
+
+    .iconos {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        
+        .fab {
+            padding: 1rem;
+        }
+    }
+}
+
+
+
+
+
+.fa-whatsapp, .fa-facebook, .fa-instagram {
+    @extend %iconos;
+}
+
+
+
 @media screen and (max-width: 480px) {
 
 

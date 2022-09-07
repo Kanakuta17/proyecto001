@@ -1,0 +1,24 @@
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
+
+
+
+}
+$redes: (
+    facebook: blue,
+    instagram: #8b0960,
+    whatsapp: #3fda10
+);
+
+@each $redsocial, $colordered in $redes {
+    .fa-#{$redsocial} {
+        background-color: $colordered;
+    }
+}
+%iconos{
+
+    width: 50px;
+    
+    
+}

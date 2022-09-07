@@ -1,3 +1,15 @@
+.fa-facebook {
+  background-color: blue; }
+
+.fa-instagram {
+  background-color: #8b0960; }
+
+.fa-whatsapp {
+  background-color: #3fda10; }
+
+.fa-whatsapp, .fa-facebook, .fa-instagram {
+  width: 50px; }
+
 * {
   margin: 0%;
   padding: 0%;
@@ -36,11 +48,6 @@ nav {
       transform: scale(2.8) translate(40px, 0px); }
   .cardpadre .titulo {
     margin-left: 35px; }
-  .cardpadre .descripcion {
-    background-color: #bbe78c;
-    height: 90px;
-    display: flex;
-    transition: all 2s; }
 
 .card {
   display: inline-block;
@@ -67,7 +74,20 @@ nav {
     margin-block: 30px;
     margin-left: 10px;
     float: left;
-    height: 300px; }
+    height: 300px;
+    width: 300px; }
+
+.redes {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-block: 20px; }
+  .redes .iconos {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+    .redes .iconos .fab {
+      padding: 1rem; }
 
 @media screen and (max-width: 480px) {
   .centro__ {
