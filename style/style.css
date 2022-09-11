@@ -7,7 +7,9 @@
 .fa-whatsapp {
   background-color: #3fda10; }
 
-.fa-whatsapp, .fa-facebook, .fa-instagram {
+.fa-whatsapp,
+.fa-facebook,
+.fa-instagram {
   width: 50px; }
 
 * {
@@ -16,21 +18,36 @@
   box-sizing: border-box; }
 
 .logo {
-  margin-left: 40%; }
+  margin-left: 45%; }
 
 header {
   background-color: #5fd6d6;
   align-items: center; }
 
-nav {
-  justify-content: space-around;
-  align-content: flex-start; }
-  nav ul {
-    align-items: center;
-    display: flex;
-    justify-content: space-between; }
-    nav ul li {
-      display: inline-block; }
+nav ul {
+  flex-direction: column;
+  align-items: center;
+  display: flex; }
+
+nav li {
+  display: inline-block;
+  -webkit-animation: swirl-in-fwd .6s ease-out both;
+  animation: swirl-in-fwd .6s ease-out both; }
+
+.centro__:nth-child(1) {
+  animation-delay: 0.2s; }
+
+.centro__:nth-child(2) {
+  animation-delay: 0.4s; }
+
+.centro__:nth-child(3) {
+  animation-delay: 0.6s; }
+
+.centro__:nth-child(4) {
+  animation-delay: 0.8s; }
+
+.centro__:nth-child(5) {
+  animation-delay: 1s; }
 
 .cardpadre {
   display: grid;
@@ -39,15 +56,15 @@ nav {
   grid-column-gap: 9px;
   grid-row-gap: 11px; }
   .cardpadre .card__imagen {
-    width: 100px;
-    padding-left: 10px;
-    margin-block: 30px;
-    margin-left: 10px;
+    width: 150px;
     float: left; }
     .cardpadre .card__imagen:hover {
-      transform: scale(2.8) translate(40px, 0px); }
+      transform: scale(1.8) translate(40px, 0px); }
   .cardpadre .titulo {
     margin-left: 35px; }
+  .cardpadre .descripcion {
+    margin: 10px;
+    position: relative; }
 
 .card {
   display: inline-block;
@@ -89,10 +106,32 @@ nav {
     .redes .iconos .fab {
       padding: 1rem; }
 
-@media screen and (max-width: 480px) {
+@-webkit-keyframes swirl-in-fwd {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    opacity: 1; } }
+
+@keyframes swirl-in-fwd {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    opacity: 1; } }
+
+@media screen and (max-width: 580px) {
   .centro__ {
     margin-left: 0px;
-    margin-right: 16px; }
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column; }
   .cardpadre {
     margin-top: 10px;
     grid-template-columns: repeat(1, 1fr); }
