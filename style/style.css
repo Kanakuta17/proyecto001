@@ -62,6 +62,8 @@ nav li {
   .cardpadre .titulo {
     margin-left: 35px;
     font-family: "Parisienne", cursive; }
+    .cardpadre .titulo .descripcion {
+      margin: 10px; }
 
 .productos1 {
   display: grid;

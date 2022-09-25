@@ -11,9 +11,9 @@
 
 header {
     background-color: aqua;
-        flex-direction: column;
-        align-items: center;
-        display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
 }
 
 nav {
@@ -37,6 +37,7 @@ nav {
     }
 
 }
+
 .cardpadre {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -57,9 +58,13 @@ nav {
         margin-left: 35px;
         font-family: "Parisienne", cursive;
 
+        .descripcion {
+            margin: 10px;
+        }
+
     }
 
-    
+
 }
 
 //PRODUCTOS//
@@ -87,21 +92,22 @@ nav {
 
     .descripcion {
         margin: 10px;
-        
+
     }
 }
 
 //IMAGENES//
 .imagenes {
-    
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 50px;
     justify-items: center;
-    .card-text{
+
+    .card-text {
         font-family: "Parisienne", cursive;
-        
+
     }
 }
 
@@ -155,7 +161,8 @@ nav {
         opacity: 1
     }
 }
-@media screen and (max-width: 1200px){
+
+@media screen and (max-width: 1200px) {
     .imagenes {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -164,6 +171,7 @@ nav {
     }
 
 }
+
 @media screen and (max-width: 580px) {
 
     .centro__ {
@@ -178,6 +186,7 @@ nav {
         grid-template-columns: repeat(1, 1fr);
 
     }
+    
 
     .imag {
         margin-top: 10px;
@@ -187,6 +196,7 @@ nav {
     .mw-100 {
         font-size: 150;
     }
+
     .imagenes {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
