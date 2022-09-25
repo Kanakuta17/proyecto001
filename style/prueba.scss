@@ -55,13 +55,11 @@ nav {
 
     .titulo {
         margin-left: 35px;
+        font-family: "Parisienne", cursive;
 
     }
 
-    .descripcion {
-        margin: 10px;
-        
-    }
+    
 }
 
 //PRODUCTOS//
@@ -83,6 +81,7 @@ nav {
 
     .titulo {
         margin-left: 35px;
+        font-family: "Parisienne", cursive;
 
     }
 
@@ -100,15 +99,16 @@ nav {
     grid-template-rows: repeat(3, 1fr);
     grid-row-gap: 50px;
     justify-items: center;
-    
+    .card-text{
+        font-family: "Parisienne", cursive;
+        
+    }
 }
 
 .redes {
     display: flex;
     justify-content: center;
     background-color: aqua;
-
-    
     padding-block: 20px;
 
     .iconos {

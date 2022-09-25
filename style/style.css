@@ -60,9 +60,8 @@ nav li {
     .cardpadre .card__imagen:hover {
       transform: scale(1.8) translate(40px, 0px); }
   .cardpadre .titulo {
-    margin-left: 35px; }
-  .cardpadre .descripcion {
-    margin: 10px; }
+    margin-left: 35px;
+    font-family: "Parisienne", cursive; }
 
 .productos1 {
   display: grid;
@@ -75,7 +74,8 @@ nav li {
     .productos1 .card__imagen:hover {
       transform: scale(1.8) translate(40px, 0px); }
   .productos1 .titulo {
-    margin-left: 35px; }
+    margin-left: 35px;
+    font-family: "Parisienne", cursive; }
   .productos1 .descripcion {
     margin: 10px; }
 
@@ -85,6 +85,8 @@ nav li {
   grid-template-rows: repeat(3, 1fr);
   grid-row-gap: 50px;
   justify-items: center; }
+  .imagenes .card-text {
+    font-family: "Parisienne", cursive; }
 
 .redes {
   display: flex;
